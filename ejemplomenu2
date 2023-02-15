@@ -1,0 +1,81 @@
+// clase 1502.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
+//
+
+#include <iostream>
+#include "stdlib.h"
+
+using namespace std;
+
+//prototipos
+void cuadrado();
+void cantidadCamisas();
+
+
+
+//main
+void main() {
+	int opcion;
+	do {
+		cout << "*****menu*****" << endl;
+		cout << "-------------" << endl;
+		cout << "1. Calcular el area de un cuadrado: " << endl;
+		cout << "2. Calcular el area: " << endl;
+		//cout << "3. Determinarsi un numero es primo o no: " << endl;
+		cout << " Ingrese la opcion: ";
+		cin >> opcion;
+		switch (opcion) {
+		case 1: cuadrado();//si la funcion no retorna valor, se la trata por su nombre, es decir porque le puse void
+			break;
+		case 2: cantidadCamisas();
+			break;
+		/*case 3: if (primo()) //si la funcion retorna un valor, se debe tratar como variable
+			cout << "El valor es primo";
+			  else
+			cout << "El valor no es primo";
+			break;*/
+		case 0: cout << "Salir"<<endl;
+			break;
+		default: "la opcion es invalida";
+			break;
+		} system("pause");
+		system("cls"); //para limpiar la pantalla
+	} while (opcion != 0);
+
+}
+
+//funciones
+
+void cuadrado()
+{
+	float lado, area;
+	cout << "Por favor ingrese el lado: ";
+	cin >> lado;
+	area = lado * lado;
+	cout << " El area del cuadrado es: " << area << endl;
+}
+
+void cantidadCamisas()
+{
+	float total, totalDescuento, cantidadC, precio, descuento;
+	cout << "Por este mes todas nuestras camisas estan a 50bs, dependiendo de cuantas camisas lleve, le haremos un precio especial :) ";
+	cout << "Por favor ingrese cuantas camisas va a llevar: ";
+	cin >> cantidadC;
+	
+	if (cantidadC >= 3)
+		precio = cantidadC * 50;
+	descuento = precio * 0.30;
+	totalDescuento = precio - descuento;
+	if (cantidadC <= 2)
+		precio = cantidadC * 50;
+	descuento = precio * 0.15;
+	totalDescuento = precio - descuento;
+
+	cout << "El total a pagar con descuento es: " << totalDescuento<<endl;
+
+}
+/*
+bool primo()
+{
+
+}
+*/
