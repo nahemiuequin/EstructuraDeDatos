@@ -1,0 +1,23 @@
+#include <iostream>
+#include <string>
+
+
+using namespace std;
+
+int main()
+{
+    int n;
+    string nombre;
+    
+    cout<<"Ingrese un nombre: "<<endl;
+    getline(cin,nombre);
+    cout<<"ingrese un numero: "<<endl;
+    cin>>n;
+    
+    
+    for (int i=0; i<=n;i++)
+    cout<<nombre<<"\n";
+        
+
+    return 0;
+}
