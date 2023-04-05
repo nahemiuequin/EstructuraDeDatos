@@ -1,0 +1,25 @@
+// ejemploTriangulo.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
+//
+
+#include <iostream>
+#include "Triangulo.h"
+
+using namespace std; 
+
+int main()
+{
+	Triangulo Triangulo1; //Triangulo2;
+	float x, y;
+
+	cout << "Ingrese los datos del triangulo, base: ";
+	cin >> x;
+	cout << "Ingrese los datos del triangulo, altura: ";
+	cin >> y;
+	Triangulo Triangulo2(7, 10);
+	cout << "El area es: " << Triangulo1.calculararea(x, y) << endl;
+	cout << "El area es: " << Triangulo2.calculararea();
+	cout << "La base es en el triangulo 1: " << Triangulo1.getbase() << endl;
+	cout << "La base es en el triangulo 2: " << Triangulo2.getbase() << endl;
+	Triangulo1.setbase(x);
+	cout << "La base del triangulo 1 es: " << Triangulo1.getbase() << endl;
+}
