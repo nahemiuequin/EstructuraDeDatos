@@ -12,8 +12,8 @@
 		Triangulo(float a, float b);
 		~Triangulo(void); //Deestructor - libera memoria
 		//Prototipos
-		float calculararea(float b, float h);
-		float calculararea();
+		float calculararea(float b, float h);  //set
+		float calculararea();			//get
 		float getbase();
 		void setbase(float);
 	};
