@@ -1,0 +1,4 @@
+elementos= ['Matematicas','Fisica', 'Quimica', 'Historia', 'Lengua']
+print (elementos)
+for i in elementos:
+    print ('Yo estudio: ', i)
