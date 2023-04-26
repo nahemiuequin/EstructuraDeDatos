@@ -1,0 +1,7 @@
+﻿  Ejemplopilaestatica.cpp
+C:\Users\UpsaLab\source\repos\Ejemplopilaestatica\Ejemplopilaestatica\TipoDato.h(6,1): error C2011: 'TipoDato': nueva definición del tipo 'class'
+C:\Users\UpsaLab\source\repos\Ejemplopilaestatica\Ejemplopilaestatica\TipoDato.h(5,7): message : vea la declaración de 'TipoDato'
+C:\Users\UpsaLab\source\repos\Ejemplopilaestatica\Ejemplopilaestatica\Ejemplopilaestatica.cpp(14,14): error C2079: 'tipito' utiliza class 'TipoDato' sin definir
+C:\Users\UpsaLab\source\repos\Ejemplopilaestatica\Ejemplopilaestatica\Ejemplopilaestatica.cpp(23,15): error C2664: 'bool Pila::Apilar(TipoDato &)': el argumento 1 no puede convertirse de 'int' a 'TipoDato &'
+C:\Users\UpsaLab\source\repos\Ejemplopilaestatica\Ejemplopilaestatica\Pila.h(15,10): message : vea la declaración de 'Pila::Apilar'
+C:\Users\UpsaLab\source\repos\Ejemplopilaestatica\Ejemplopilaestatica\Ejemplopilaestatica.cpp(23,15): message : al hacer coincidir la lista de argumentos '(int)'
